@@ -3,7 +3,7 @@ from langchain.chains import LLMChain
 from langchain.chains import SequentialChain
 from langchain.chat_models import ChatOpenAI
 
-from secret_key import OPENAI_API_KEY
+OPENAI_API_KEY = st.secrets["OPENAI_API_KEY"]
 
 llm = ChatOpenAI(
     temperature=0.7,
